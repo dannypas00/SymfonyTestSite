@@ -1,5 +1,5 @@
 hello_world:
-  path: /
+  path: /hello
   controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
   defaults:
     template: 'hello_world.html.twig'

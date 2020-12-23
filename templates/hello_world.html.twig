@@ -1,1 +1,6 @@
-Hello, world!
+{% extends 'base.html.twig' %}
+{% block page_title %}Hello, world!{% endblock %}
+{% block main %}
+    {#{{ dump() }}<br>#}
+    Hello, {{ app.request.query.get('name') | default("world") }}!
+{% endblock %}
